@@ -1,6 +1,7 @@
 export type Employee = {
   readonly id: string;
-  readonly fullName: string;
+  readonly firstName: string;
+  readonly lastName: string;
   readonly email: string;
   readonly jobTitle: string;
   readonly department: string;

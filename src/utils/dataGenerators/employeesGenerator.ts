@@ -1,11 +1,12 @@
 import { faker } from '@faker-js/faker';
-import { type Employee } from '../models/employee';
+import { type Employee } from '../../models/employee';
 
 export namespace EmployeesGenerator {
   function createEmployee(): Employee {
     return { 
       id: faker.string.uuid(),
-      fullName: faker.person.fullName(),
+      firstName: faker.person.firstName(),
+      lastName: faker.person.lastName(),
       email: faker.internet.email(),
       jobTitle: faker.person.jobTitle(),
       department: faker.commerce.department(),
